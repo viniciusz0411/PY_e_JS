@@ -1,0 +1,4 @@
+br = ("Atlético-MG","Bahia","Botafogo","Bragantino","Ceará","Corinthians","Cruzeiro","Flamengo","Fluminense","Fortaleza","Grêmio","Internacional","Juventude","Mirassol","Palmeiras","Santos","São Paulo","Sport","Vasco","Vitória")
+print(f'os 6 primeiros sao: {br[:6]}')
+print(f'os 4 ultimos sao: {br[16:]}')
+print(f'em ordem alfabetica é {sorted(br)}')

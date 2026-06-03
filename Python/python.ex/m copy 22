@@ -1,0 +1,5 @@
+km = int(input('qual a velocidade do carro: '))
+if km <= 60:
+    print('ta dirijindo bem')
+else:
+    print('ta dirigindo mal')

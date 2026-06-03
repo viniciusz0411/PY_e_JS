@@ -1,0 +1,18 @@
+galera=list()
+p=''
+dado = list()
+while True:
+    dado.append(str(input('nome: ')))
+    dado.append(int(input('idade: ')))
+    galera.append(dado[:])
+    dado.clear()
+    p=str(input('deseja continuar? S/N: ')).upper()[0]
+    if p in 'N':
+        break
+print(dado)
+for c in galera:
+    if c[1]>18:
+        print(f'{c[0]} é de maior')
+    else:
+        print(f'{c[0]} é de menor')
+print(galera)

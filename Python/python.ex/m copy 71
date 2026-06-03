@@ -1,0 +1,15 @@
+list=[]
+c=n=0
+cinc=cont=''
+while True:
+    n = int(input('um numero: '))
+    list.append(n)
+    c+=1
+    if 5 in list:
+        cinc='sim'
+    else:
+        cinc='nao'
+    cont = str(input('deseja continuar? S/N: ')).upper().strip()[0]
+    if 'N' in cont:
+        break
+print(f'foi digitado {c} numeros, a ordem reversa é {sorted(list, reverse=True)}, e {cinc} teve o numero cinco')

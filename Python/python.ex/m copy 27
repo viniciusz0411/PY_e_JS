@@ -1,0 +1,6 @@
+n1 = int(input('salário: '))
+if n1 <= 1000:
+    sal = (n1/100)*15+n1
+else:
+    sal = (n1/100)*10+n1
+print(f'o salario é {sal}')

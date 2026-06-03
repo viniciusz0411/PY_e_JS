@@ -1,0 +1,6 @@
+dis = float(input('quantos km '))
+if dis <= 200:
+    pre = dis * 0.50
+else:
+    pre = dis * 2
+print(f'o valor é {pre}')

@@ -1,0 +1,5 @@
+while True:
+    numero = int(input('numero: '))
+    for vezes in range(1, 11):
+        resultado = numero*vezes
+        print(f'a tabuada de {numero} vezes {vezes} é {resultado} ')

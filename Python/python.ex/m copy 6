@@ -1,0 +1,2 @@
+n = int(input('uma distancia em metros: '))
+print(f'a medida de {n}, corresponde a {n /1000}km, {n/100}hm, {n/10}dam, {n*10}dm, ')

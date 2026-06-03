@@ -1,0 +1,7 @@
+resp = n = cont = 0
+while resp!=999:
+    resp = int(input('digite um valor para somar, 999 para sair: '))
+    if resp != 999:
+        cont=cont+resp
+        n=n+1
+print(f'para os {n} numeros, a soma é {cont}')

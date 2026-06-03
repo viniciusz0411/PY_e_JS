@@ -1,0 +1,14 @@
+t = int(input('numero: '))
+tot=0
+for c in range(1, t+1):
+    if t % c ==0:
+        print('\033[33m')
+        tot+=1
+    else:
+        print('\033[31m')
+    print(f'{c}')
+print(f'\n\033[mo numero {t}, foi divisivel {tot} vezes')
+if tot ==2:
+    print('ele é primo.')
+else:
+    print('não é primo.')

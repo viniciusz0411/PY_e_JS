@@ -1,0 +1,12 @@
+p = str(input('uma frase: ')).strip().upper()
+sep = p.split()
+jun=''.join(sep)
+inv = jun[::-1]
+'''inv='''
+'''for letra in range(len(jun)-1, -1, -1):
+    inv += jun[letra]'''
+print(f'a frase {p} fica {inv}')
+if inv == jun:
+    print('é um palidromo')
+else:
+    print('nao e um palidromo')

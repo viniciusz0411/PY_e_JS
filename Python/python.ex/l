@@ -1,0 +1,7 @@
+facul = {'nome':'maria', 'idd':'20', 'curso':'enge'}
+print(facul)
+facul['nota'] = 9.5
+facul['idd'] = 21
+facul.pop('curso')
+facul['cursos'] = ['med', 'nutri', 'pedre']
+print(facul)

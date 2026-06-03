@@ -1,0 +1,9 @@
+def area(l, c):
+    total=larg*comp
+    print(f'a area em metros quadrados é {total}')
+
+print('-'*30)
+larg=int(input('qual a largura? '))
+comp=int(input('qual o comprimento? '))
+area(larg, comp)
+print('-'*30)

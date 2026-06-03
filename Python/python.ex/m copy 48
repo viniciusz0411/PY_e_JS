@@ -1,0 +1,24 @@
+media = 0
+mediaf=0
+iddh= 0
+muve=0
+nomevelho=''
+for p in range(1, 5):
+    print(f'{p} pessoa:')
+    nome = str(input('nome:')).strip()
+    idd = int(input('idade:'))
+    sex = str(input('sexo: M/F:')).strip()
+    media=media+idd
+    if p ==1: 
+      iddh=idd
+      nomevelho=nome  
+    if sex in'Mm':
+        if iddh<idd:
+            iddh=idd
+            nomevelho=nome
+    if sex in 'Ff':
+       if idd<20:
+          muve=muve+1
+       
+mediaf=media/4
+print(f'a media é {mediaf}, o nome do homem mais velho é {nomevelho}, e há {muve} mulheres com menos de 20 anos')

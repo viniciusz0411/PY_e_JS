@@ -1,0 +1,3 @@
+import math 
+n = float(input('fale um numero: '))
+print(f'o valo digitado é {n}, e sua porçao inteira é {math.floor(n)}')

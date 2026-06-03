@@ -1,0 +1,18 @@
+par=[]
+impar=[]
+list=[]
+resp=[]
+cont=''
+while True:
+    resp=int(input('um numero: '))
+    list.append(resp)
+    if resp%2==0:
+        par.append(resp)
+    else:
+        impar.append(resp)
+    cont=str(input('deseja continuar?S/N: ')).upper().strip()[0]
+    if cont in 'N':
+        break
+print(f'a lista é {list}, os pares sao {par}, e os impares sao {impar}')
+
+    

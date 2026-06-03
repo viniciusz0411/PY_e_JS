@@ -1,0 +1,13 @@
+n = int(input('quantos termos quer mostrar? fibonacci: '))
+t1 = 0
+t2 =1
+t3 = 1
+print(f'{t1}={t2}={t3}=', end='')
+cont=4
+while cont<=n:
+    t1 = t2
+    t2=t3
+    t3= t1+t2
+    print(f'{t3}=', end='')
+    cont=cont+1
+print('PAUSA')

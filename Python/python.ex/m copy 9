@@ -1,0 +1,8 @@
+t = float(input('qual temperatura atual? '))
+print(f"sua temp. de {t} ficara {t*9/5+32}")
+
+
+
+d = float(input('quantos dias alugou esse carro? '))
+km =  float(input('quantos km rodados? '))
+print(f'voce alugou por {d} esse carro, andou {km}, e assim ficou {d*60+km * 0.15} reais.')

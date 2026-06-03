@@ -1,0 +1,10 @@
+p = float(input('qual seu peso: '))
+t = float(input('qual sua altura: '))
+imc = p/(t**2)
+print(f'seu imc é {imc}')
+if imc < 18.5:
+    print('abaixo do peso')
+elif imc < 25:
+    print('ideal')
+elif imc<30:
+    print('sobrepeso')

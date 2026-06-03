@@ -1,0 +1,18 @@
+resp = 's'
+maior = menor = cont = soma = 0
+while resp != 'n':
+    n = int(input('um numero: '))
+    cont=cont+1
+    soma = soma +n
+    if cont == 1:
+        maior = n
+        menor =n
+    if n > maior:
+        maior=n
+    elif n < menor:
+        menor = n
+    resp = str(input('quer continuar? S/N: ')).lower()
+
+print(f'''voce digitou {cont} numeros, sua media é {soma/cont}
+o maior valor é {maior}, e o menor é {menor}''')
+

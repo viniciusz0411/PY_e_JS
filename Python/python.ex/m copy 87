@@ -1,0 +1,16 @@
+from time import sleep
+def linha(msg):
+    tot=len(msg)
+    print('-'*tot)
+    print(msg)
+    print('-'*tot)
+def contador(i, f, p):
+    for c in range(i, f, p):
+        print(f'{c} ',end='', flush=True)
+        sleep(1)
+    print(f'{f} ', end='')
+    print('FIM')
+linha('Contagem')
+contador(1, 10, 1)
+contador(10,1,-2)
+contador(int(input('inicio: ')), int(input('fim: ')), int(input('passo: ')))

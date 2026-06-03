@@ -1,0 +1,15 @@
+from datetime import datetime
+dados=dict()
+dados['nome']=str(input('nome: '))
+nasc=int(input('em que ano nasceu? '))
+dados['idade']=datetime.now().year-nasc
+carte= float(input('possui carteira de trabalho? 0 para não: '))
+if carte !=0:
+    dados['contrataçao']=int(input('em que ano foi contratado? '))
+    dados['numero']=int(input('numero da carteira: '))
+    dados['salario']=float(input('qual seu salário? '))
+    dados['aposentadoria']= (dados['contrat']+35)-nasc
+print('-'*30)
+for k, v in dados.items():
+    print(f'o {k} tem o valor {v}')
+print('-'*30)

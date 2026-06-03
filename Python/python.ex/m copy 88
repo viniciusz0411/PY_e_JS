@@ -1,0 +1,15 @@
+from time import sleep
+def maior(*núm):
+    quant=maior=0
+    for valor in núm:
+        print(f'{valor} ', end='', flush=True)
+        sleep(0.4)
+        if quant==0:
+            maior=valor
+        else:
+            if valor>maior:
+                maior=valor
+        quant+=1
+    print(f'para os {quant}, o maior é {maior}')
+
+maior(4,5,7777,22,0)

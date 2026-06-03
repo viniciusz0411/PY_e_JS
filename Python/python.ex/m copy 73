@@ -1,0 +1,13 @@
+p1=0
+p2=0
+exp=str(input('digite uma expressao: '))
+for letra in exp:
+    if letra in '(':
+        p1+=1
+    elif letra in ')':
+        p2+=1
+if p1 == p2:
+    print('a expressao esta correta')
+else:
+    print('esta errada')
+    

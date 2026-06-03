@@ -1,0 +1,11 @@
+n = int(input('numero: ')), int(input('numero: ')), int(input('numero: ')), int(input('numero: '))
+print(f'foi digitado {n}')
+print(f'o 9 apareceu {n.count(9)} vezes.')
+if 3 in n:
+    print(f'o valor 3 apareceu primeirona {n.index(3)} posição.')
+else:
+    print('não tem o numero 3')
+print('os valores pares digitados foram', end=' ')
+for num in n:
+    if num % 2 ==0:
+        print (f'{num}')

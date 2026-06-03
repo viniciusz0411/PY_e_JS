@@ -1,0 +1,14 @@
+from datetime import time
+n = int(input('numero: '))
+print('''éscolha um
+      1 binario
+      2 octal
+      3 hexadecimal''')
+while True:
+    op = int(input('sua opcao: '))
+    if op == 1:
+        print(f'{bin(n)}')
+    elif op ==2:
+        print(f'{oct(n)}')
+    elif op ==3:
+        print(f'{hex(n)}')

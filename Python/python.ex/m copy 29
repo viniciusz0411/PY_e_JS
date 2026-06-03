@@ -1,0 +1,10 @@
+casa = float(input('valor casa: '))
+sala = float(input('salario: '))
+an0 = int(input('quantos anos: '))
+prest = (an0*12)/casa
+min = sala*30/100
+print(f'{prest}')
+if prest <= min:
+    print('pod compra')
+else:
+    print('pod nao')

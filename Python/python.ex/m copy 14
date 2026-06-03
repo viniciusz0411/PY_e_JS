@@ -1,0 +1,8 @@
+import random
+n1 = input('nome 1: ')
+n2 = input('nome 2: ')
+n3 = input('nome 3: ')
+lista = [n1, n2, n3]
+random.shuffle(lista)
+
+print(f' a ordem de apresentaçao é : {lista}')

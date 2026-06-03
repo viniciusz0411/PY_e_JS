@@ -1,0 +1,12 @@
+ano = int(input('que ano nasceu? '))
+id = 2026 - ano
+if id <18:
+    f = 18 - id
+    print(f'voce tem {id} anos')
+    print(f'falta {f} anos para se alistar')
+    print(f'será em {ano + 18}')
+else:
+    j = id - 18
+    a = 2026 - j
+    print(f'devia te se alistado a {j} ano, em {a}')
+    print('pod se alista')

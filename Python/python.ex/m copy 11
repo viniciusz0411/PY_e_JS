@@ -1,0 +1,3 @@
+o = float(input('comprimento cateto oposto '))
+a = float(input('comprimento cateto adjacente '))
+print(f' o cateto oposto é {o} e o adjacente é {a}, e a hipotenusa é {(o**2+a**2)**(1/2)}')

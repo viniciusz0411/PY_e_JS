@@ -1,0 +1,37 @@
+time=list()
+jog=dict()
+part=list()
+gol=0
+while True:
+    jog.clear()
+    jog['nome']=str(input('nome: '))
+    tot=int(input('quantas partidas jogou? '))
+    for c in range(0, tot):
+        part.append(int(input(f'quantos gols na partida {c+1}: ')))
+        part.clear()
+    jog['gols']=part[:]
+    jog['total']= sum(part)
+    time.append(jog.copy())
+    resp=str(input('quer continuar? S/N: ')).upper()[0]
+    if resp == 'N':
+        break
+print('-'*30)
+print('cod', end='')
+for i in jog.keys():
+    print(f'{i:<15}', end='')
+print()
+for k, v in enumerate(time):
+    print(k, end='')
+    for d in v.values():
+        print(f'{str(d):<15}', end='')
+print('-'*30)
+while True:
+    busca=int(input('cod de busca: '))
+    if busca ==999:
+        break
+    if busca >= len(time):
+        print('erro')
+    else:
+        print(f'jogador {time[busca]['nome']}')
+        for i, g in enumerate(time[busca]['gols']):
+            print(f'no jogo {i} fez {g} gols')

@@ -1,0 +1,2 @@
+n = int(input('escolha um numero: '))
+print(f'seu numero é {n}, o dobro é {n*2}, o triplo é {n*3}, a raiz quadrada é {n** (1/2)}, e a potencia é {n*n}')

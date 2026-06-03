@@ -1,0 +1,6 @@
+n1 = int(input('numero: '))
+n2 = int(input('numero: '))
+if n1 > n2:
+    print(f'{n1} é maior')
+elif n1< n2:
+    print(f'{n2} é maior')

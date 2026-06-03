@@ -1,0 +1,9 @@
+resp= soma = cont = 0
+while True:
+    resp = int(input('um numero: 999 para sair: '))
+    if resp==999:
+        break
+    else: 
+        soma+=resp
+        cont=cont+1
+print(f'para os {cont} numeros a soma é {soma}')

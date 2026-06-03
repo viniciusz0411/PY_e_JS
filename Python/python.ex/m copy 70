@@ -1,0 +1,9 @@
+m =0
+me=0
+n = []
+for c in range(1, 6):
+    p = int(input(f'um numero para a posicao {c}: '))
+    n.append(p)
+m = max(n)
+me=min(n)
+print(f' o maior valor é {m}, na posicao {n.index(m)+1}, o menor é {me}, na posiçao {n.index(me)+1}')

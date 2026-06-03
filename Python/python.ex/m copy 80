@@ -1,0 +1,6 @@
+nota = dict()
+nota['nome']=str(input('nome: '))
+nota['media']=int(input('media: ')) 
+print('-'*20)
+print(f'''o nome é {nota['nome']}...
+e sua media é {nota['media']}.''')

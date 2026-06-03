@@ -1,0 +1,8 @@
+from random import randint
+computador = randint(0, 5)
+n = input('qual numero pensei: ')
+if n == computador:
+    print('Acertou')
+else:
+    print('Errou')
+    print(f'O numero era {computador}')

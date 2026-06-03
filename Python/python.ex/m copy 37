@@ -1,0 +1,17 @@
+v = int(input('qual valor da compra: '))
+r = int(input('''1 á vista
+      2 á vista no cartão
+      3 em 2x no cartão
+      4 no cartão 3 ou mais vezes
+              '''))
+if r ==1:
+    che = (v/100*10)-v
+    print(f'valor {che}')
+elif r ==2:
+    ca1 = (v/100*5)-v
+    print(f'valor {ca1}')
+elif r==3:
+    print(f'o valor é {v}')
+else:
+    p = int(input('quantas parcelas: '))
+    print(f'o valor de cada parcela é {(v/100*10+v)/ p}')

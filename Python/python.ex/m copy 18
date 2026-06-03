@@ -1,0 +1,4 @@
+nom = str(input('nome: ')).strip()
+if 'silva' in nom.upper():
+    print('tem silva sim')
+

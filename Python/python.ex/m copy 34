@@ -1,0 +1,13 @@
+from datetime import date
+atual = date.today().year
+nas = int(input('idade: '))
+ida = atual - nas
+print(f'o atleta nasceu {ida} ')
+if ida <= 9:
+    print('mirim')
+elif ida <= 14:
+    print ('mirim')
+elif ida<=25:
+    print('junior')
+else:
+    print('senior')

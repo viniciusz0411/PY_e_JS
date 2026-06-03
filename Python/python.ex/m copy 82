@@ -1,0 +1,18 @@
+jog=dict()
+part=list()
+gol=0
+jog['nome']=str(input('nome: '))
+tot=int(input('quantas partidas jogou? '))
+for c in range(0, tot):
+    part.append(int(input(f'quantos gols na partida {c+1}: ')))
+jog['gols']=part[:]
+jog['total']= sum(part)
+print('-'*30)
+print(jog)
+print('-'*30)
+for k, v in jog.items():
+    print(f' o campo {k} tem o valor {v}')
+print('-'*30)
+print(f'o jogador {jog["nome"]} jogou {len(jog["gols"])}')
+for k, v in enumerate(jog['gols']):
+    print(f'na partida {k} jogou {v} jogos')

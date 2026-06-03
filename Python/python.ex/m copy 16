@@ -1,0 +1,7 @@
+import math
+num = int(input('numero:'))
+ 
+print(f'analisando {num}')
+print(f'unidade {num // 1 % 10}')
+print(f'dezena {num // 10 % 10}')
+print(f'centena{num // 100 % 10}')

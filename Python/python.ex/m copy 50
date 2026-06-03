@@ -1,0 +1,27 @@
+from random import randint
+tent =0 
+comp = randint(0, 10)
+print('''sou seu computador 
+e escolhi um numero de 0 a 10
+consegue adivinhar qual é?''')
+acerto = False
+while acerto == False:
+    jog = int(input('qual seu palpite: '))
+    tent=tent+1
+    if jog == comp:
+        acerto=True
+    elif jog<comp:
+        print('é maior')
+    elif jog > comp:
+        print('é menor')
+if tent<=2:
+    qual= 'perfeito'
+elif tent <=5:
+    qual = 'ok'
+elif tent<=10:
+    print('ruim')
+
+
+
+print(f'acertou com {tent} tentativas, voce foi {qual}')
+    

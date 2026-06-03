@@ -1,0 +1,26 @@
+print('gerador de PA')
+t = int(input('primeiro termo: '))
+f = int(input('fatorial: '))
+resp=1
+cont = 1
+while resp !=0:
+    while cont!= 11:
+        if cont ==1:
+            num = t + f
+        else:
+            num = num + f 
+        print(f'{num} = ', end='')
+        cont=cont+1
+    print('PAUSA')
+    mais = int(input('quantos termos voce quer a mais? 0 para desligar o programa: '))
+    conta = 0
+    if mais != 0: 
+        while conta != mais:
+            num = num + f
+            print(f'{num} = ', end='')
+            conta=conta+1
+    else:
+        resp=0
+print('fim')
+
+

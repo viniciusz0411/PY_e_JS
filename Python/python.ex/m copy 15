@@ -1,0 +1,9 @@
+n = str(input('qual seu nome? ')).strip()
+nm= n.upper()
+nmi = n.lower()
+t = len(n)-n.count(' ')
+um = n.find(' ')
+print(f'''seu nome em maiusculas é {nm}
+seu nome em minusculas é {nmi}
+e ao todo tem {t} letras
+primeiro nome {um}''')

@@ -1,0 +1,13 @@
+list = []
+p=''
+n = 0
+while True:
+    n=int(input('um numero: '))
+    if n in list:
+        print('numero ja existente')
+    else:
+        list.append(n)
+    p = str(input('deseja continuar? S/N: ')).upper().strip()[0]
+    if p in 'N':
+        break
+print(sorted(list))

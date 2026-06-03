@@ -1,0 +1,29 @@
+n1 = int(input('primeiro numero: '))
+n2 = int(input('segundo numero: '))
+resp = 0
+while resp !=5:
+    print('''   -1 somar
+    -2 multiplicar
+    -3 maior
+    -4 novos numero
+    -5 sair do programa''')
+    resp = int(input('qual sua opção: '))
+    if resp == 1:
+        print(f'a soma é {n1+n2}')
+    elif resp ==2:
+        print(f'a multiplicaçao é {n1*n2}')
+    elif resp ==3:
+        if n1<n2:
+            print(f'o maior é {n2}')
+        elif n1>n2:
+            print(f'o maior é {n1}')
+        else:
+            print('sao iguais')
+    elif resp==4:
+        n1 = int(input('informe de novo'))
+        n2 = int(input('informe de novo'))
+    else:
+        print('opcao invalida')
+print('fim')
+        
+    

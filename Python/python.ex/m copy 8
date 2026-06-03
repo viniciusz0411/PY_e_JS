@@ -1,0 +1,6 @@
+v = float(input('qual o valor?' ))
+p = int(input('quual porc. de desconto? '))
+print(f'o valor normal do produto é {v}, a porc. de desconto é {p}%, e o valor total fica {(v*p/100)-v}')
+
+s = float(input('salario atual: '))
+print(f'seu salario anterior era {s}, e agora com 15% de aumento, que resultou em {(s*15/100)+s}')

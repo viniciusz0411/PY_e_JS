@@ -1,0 +1,8 @@
+resp = 0
+num = ('zero', 'um', 'dois', 'tres', 'quatro', 'cinco', 'seis', 'sete', 'oito', 'nove', 'dez')
+while True:
+    resp = int(input('um numero entre 0 e 20: '))
+    if 0<=resp<=20:
+        break
+    print('tente de novo, ', end='')
+print (f'o numero é {num[resp]}')

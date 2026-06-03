@@ -1,0 +1,19 @@
+soma=0
+somac=0
+somal=0
+matriz=[0, 0, 0],[0,0,0],[0,0,0]
+for linha in range(0,3):
+    for coluna in range(0,3):
+        matriz[linha][coluna] = int(input(f'de um numero para por em {linha, coluna}: '))
+        if matriz[linha][coluna] %2==0:
+            soma+=matriz[linha][coluna]
+        if coluna==2:
+            somac+=matriz[linha][coluna]
+        if linha ==1:
+            somal+=matriz[linha][coluna]
+print('-' *30)
+for linha in range(0,3):
+    for coluna in range(0,3):
+        print(f'[{matriz[linha][coluna]:^5}]', end='')
+    print()
+print(f'a soma é dos pares é {soma}, soma da coluna 3 é {somac}, e a soma da linha 2 é {somal}')

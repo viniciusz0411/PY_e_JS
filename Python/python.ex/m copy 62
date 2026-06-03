@@ -1,0 +1,18 @@
+q = barat = cmil = total = 0
+print('CAIXA')
+resp = ''
+while True:
+    n = str(input('qual o nome do produto? '))
+    q +=1
+    p = int(input('qual o preço? '))
+    if q == 1:
+        barat = n
+    if p > 1000:
+        cmil +=1
+    if n < barat:
+        barat=n
+    total = total + p
+    resp = str(input('quer continuar? S/N: ')).upper().strip()
+    if resp in 'Nn':
+        break
+print(f'total gasto {total}, {cmil} custam mais de 1000 reais, {barat} é o mais barato')

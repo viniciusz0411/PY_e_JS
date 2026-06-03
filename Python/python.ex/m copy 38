@@ -1,0 +1,32 @@
+from random import randint
+it=('pedra', 'papel', 'tesoura')
+com = randint(0,2)
+while True:
+    print('''Escolha um:
+        0 pedra
+        1 papel
+        2 tesoura.''')
+    es = int(input('qual sua escolha? '))
+    print(f'computador jogou {it[com]}')
+    print(f'jogador jogou {it[es]}')
+    if com ==0:
+        if es == 0:
+            print('empate')
+        elif es ==1:
+            print('voce venceu')
+        else:
+            print('voce perdeu')
+    elif com==1:
+        if es == 0:
+            print('voce venceu')
+        elif es ==1:
+            print('empate')
+        else:
+            print('voce vence')
+    elif com==2:
+        if es == 0:
+            print('voce vence')
+        elif es ==1:
+            print('voce vence')
+        else:
+            print('empate')

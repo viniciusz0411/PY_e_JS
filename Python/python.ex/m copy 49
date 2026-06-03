@@ -1,0 +1,6 @@
+while True:
+    sex=str(input('qual o sexo? ')).upper()[0].strip()
+    if sex in 'MF':
+        print('sexo registrado')
+    else:
+        print('sexo invalido')

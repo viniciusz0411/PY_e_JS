@@ -1,0 +1,8 @@
+lista = [],[]
+for c in range(0,7):
+    n = int(input(f'digite um numero para a posição {c+1}: '))
+    if n %2==0:
+        lista[0].append(n)
+    else:
+        lista[1].append(n)
+print(f'os pares em ordem crescente são {sorted(lista[0])}, e os imapres são {sorted(lista[1])}')

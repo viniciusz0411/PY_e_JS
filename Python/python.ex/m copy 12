@@ -1,0 +1,5 @@
+import math
+a = float(input('angulo que deseja: '))
+print(f'o angulo de {a} tem SENO de {math.sin(a)}')
+print(f' cosseno é {math.cos(a)}')
+print(f'e a tangente é {math.tan(a)}')

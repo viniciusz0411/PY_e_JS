@@ -1,0 +1,7 @@
+s1 = float(input('primeiro segmento: '))
+s2 = float(input('segundo: '))
+s3 = float(input('terceiro: '))
+if s1 < (s2+s3) and s2 < (s1+s3) and s3 < (s1+s2):
+    print(f'da um triangulo')
+else:
+    print('nao da um triangulo')

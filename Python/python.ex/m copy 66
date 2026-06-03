@@ -1,0 +1,7 @@
+from random import randint
+n = randint(1, 99), randint(1, 99), randint(1, 99), randint(1, 99), randint(1, 99)
+
+for num in n:
+    print(num, end=' ')
+print(f'\no maior é {max(n)}')
+print(f'omenor é {min(n)}')

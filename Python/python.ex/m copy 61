@@ -1,0 +1,14 @@
+idd = mas = femvint = dezo = 0
+while True:
+    idd = int(input('qual idade: '))
+    sex = str(input('qual o sexo? M/F: ')).upper().strip()[0]
+    if idd < 18:
+        dezo+=1
+    if sex in 'M':
+        mas+=1
+    if idd > 20 and sex in 'F':
+        femvint+=1
+    p = str(input('deseja continuar? S/N: ')).upper().strip()[0]
+    if p in 'N':
+        break
+print(f'teve {mas} homem, {femvint} mulheres com mais de 20 anos e {dezo} menores de dezoito anos')

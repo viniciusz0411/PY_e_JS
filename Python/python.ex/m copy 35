@@ -1,0 +1,13 @@
+s1 = int(input('segmento primeiro: '))
+s2 = int(input('segundo: '))
+s3 = int(input('terceiro: '))
+if s1 < s2 + s3 and s2 < s1 + s3 and s3 < s1 + s2:
+    print('forma um triangulo')
+    if s1 == s2 ==s3:
+        print('é equilatero')
+    elif s1 != s2 != s3 != s1:
+        print('escaleno')
+    else:
+        print('isosceles')
+else:
+    print('nao da triangulo')

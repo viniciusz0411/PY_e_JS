@@ -1,0 +1,6 @@
+import random
+
+nome = ['maria', 'pedro', 'paulo']
+print(nome)
+esco = random.choice(nome)
+print(f'o aluno escolhido foi {esco}')

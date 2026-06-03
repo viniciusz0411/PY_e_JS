@@ -1,0 +1,9 @@
+n = int(input('um numero para fatoriar: '))
+c = n
+f = 1 
+while c > 0:
+    print( c), 
+    print(f'x ' if c > 1 else '= ')
+    f = f * c
+    c = c -1
+print(f'{f} ')

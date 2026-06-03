@@ -1,0 +1,20 @@
+from random import randint
+from time import sleep
+def aleat(lista):
+    print('sorteando 5 numeros: ', end='')
+    for c in range(0,5):
+        n=randint(1,11)
+        lista.append(n)
+        sleep(1)
+        print(f'{n} ', end='', flush=True)
+def somapar(lista):
+    soma=0
+    for num in lista:
+        if num%2==0:
+            soma+=num
+    print()
+    print(f'A soma dos pares é {soma}')
+
+numeros=list()
+aleat(numeros)
+somapar(numeros)

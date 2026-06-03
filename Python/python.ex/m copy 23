@@ -1,0 +1,6 @@
+n = int(input('um numero '))
+par = n % 2
+if par == 0:
+    print('é par')
+else:
+    print('é impar')
