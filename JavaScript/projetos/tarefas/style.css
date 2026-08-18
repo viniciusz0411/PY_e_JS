@@ -1,0 +1,113 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    background-image: linear-gradient(150deg, #424A59, #3B4254,#5885A0,#5CB2A7,#7DC196);/*Degradê*/
+    text-align: center;
+}
+#container{
+    width: 90%;
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+}
+#corpo{
+    text-align: center;
+}
+form{
+    position: relative;
+}
+#txt {
+  width: 100%;
+  height: 45px;
+  padding: 8px;
+  transition: background-color 2s;
+  border: 1px solid black;
+  box-sizing: border-box;
+}
+#txt:hover{
+    background-color: #a1b3d4;
+    transition: background-color .5s;
+}
+#txt:focus{
+    outline: none;
+}
+#txt::placeholder{
+    color:  rgb(78, 78, 78);
+}
+#botao{
+   position: absolute;
+   transition: background-color 2s;
+   border: 1px solid black;
+   cursor: pointer;
+   top: 0;
+   right: 0;
+   width: 45px;
+   background-color: aliceblue;
+   height: 45px;
+   font-size: 25px;
+   color: rgb(78, 78, 78);
+}
+#botao:hover{
+    background-color: #a1b3d4;
+    transition: background-color .5s;
+}
+h2{
+    color: aliceblue;
+    padding: 40px;
+}
+ul{
+    list-style: none;
+}
+li{
+    text-align: left;
+    height: 50px;
+    line-height: 45px;
+    position: relative;
+    background-color: #ffffff;
+    padding-left: 15px;
+    color: rgb(78, 78, 78);
+    border: 1px solid black;
+    border-bottom: 3px solid black;
+}
+.material-symbols-outlined{
+    position: absolute;
+    bottom: 0;
+    height: 46px;
+    width: 45px;
+    padding: 11px;
+}
+.check{
+    right: 45px;
+    transition: background-color 1s, color 1s;
+    cursor: pointer;
+}
+.check:hover{
+    background-color: rgb(25, 90, 25);
+    transition: background-color .5s, color .5s;
+    color: aliceblue;
+}
+.delete{
+    right: 0px;
+    transition: color 1s ,background-color 1s;
+    cursor: pointer;
+}
+.delete:hover{
+    background-color: rgb(119, 19, 19);
+    color: aliceblue;
+    transition: color .5s, background-color .5s;
+}
+.done{
+    background-color: #3B4254;
+    text-decoration: line-through;
+    color: aliceblue;
+    transition: background-color .5s;
+}
+.hide{
+    display: none;
+}
+
