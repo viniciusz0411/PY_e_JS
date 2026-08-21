@@ -1,5 +1,4 @@
 //1. Criação e Execução de uma Promise 
-javascript
 const promessa = new Promise((resolve, reject) => {
   const nome = "ZANDO";
   if (nome === "ZANDO") {
@@ -17,7 +16,7 @@ promessa.then((data) => {//executa se for resolve
 
 
 // 2. Encadeamento de `.then()`
-javascript
+
 const promessa2 = new Promise((resolve, reject) => {
   resolve("ZANDO");
 });
@@ -32,7 +31,7 @@ promessa2
 
 
 // 3. Tratamento de Erros com `.catch()` 
-javascript
+
 const promessa3 = new Promise((resolve, reject) => {
   const nome = "João";
   if (nome === "ZANDO") {
@@ -48,7 +47,7 @@ promessa3
 
 
 // 4. Resolvendo várias Promises com `Promise.all` e `Promise.race` 
-javascript
+
 const p1 = new Promise((resolve, reject) => {
   setTimeout(() => resolve("P1 ok"), 2000);
 });
@@ -63,7 +62,7 @@ Promise.race([p1, p2, p3]).then((data) => console.log(data));
 
 
 // 5. Fetch API 
-javascript
+
 const userName = "matheusbattisti";
 
 fetch(`https://api.github.com/users/${userName}`, {
@@ -77,3 +76,23 @@ fetch(`https://api.github.com/users/${userName}`, {
   console.log(`O nome do usuário é: ${data.name}`);
 })
 .catch((err) => console.log("Erro: " + err));
+
+
+//6. Await
+
+async function getUser(id) {
+const response = await fetch(`https://jsonplaceholder.typicode.com/users/${id}`);
+const data = await response.json();
+return data;
+}
+
+async function showUserName(id) {
+try {
+const user = await getUser(id);
+console.log(`O nome do usuário é: ${user.name}`);
+} catch (error) {
+console.log("Erro na requisição: ", error);
+}
+}
+
+showUserName(1);
